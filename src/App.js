@@ -1,5 +1,7 @@
 //import Area
 import { useEffect, useState } from 'react';
+import './App.css';
+
 
 function App() {
 //1. state/variable
@@ -16,7 +18,7 @@ let myFunction = () =>{
   //call the api here
   var data = {
     "data":{
-      "name":studentName
+      "Name":studentName
     }
   }
   //fetch api/promise chain
@@ -51,7 +53,7 @@ return (
     { studentName }
     <form>
       <label>Enter student Name:  
-        <input type="text" value={ studentName } name='studentName' onChange={(e)=>{ setStudentName(e.target.value)} } /><br />
+        <input type="text" value={ studentName } name='Name' onChange={(e)=>{ setStudentName(e.target.value)} } /><br />
       </label>
       
       <input type="button" onClick={ myFunction } name="studentName" value="Save student" />
